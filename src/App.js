@@ -1,6 +1,7 @@
 import React from "react";
 
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 
 //Code to import Budget.js
 import Budget from "./components/Budget";
@@ -13,6 +14,7 @@ import { AppProvider } from "./context/AppContext";
 import ExpenseList from "./components/ExpenseList";
 import ExpenseItem from "./components/ExpenseItem";
 import AllocationForm from "./components/AllocationForm";
+import Currency from "./components/Currency";
 const App = () => {
   return (
     <AppProvider>
@@ -27,6 +29,9 @@ const App = () => {
           </div>
           <div className="col-sm">
             <ExpenseTotal />
+          </div>
+          <div className="col-sm">
+            <Currency />
           </div>
           {/* Add ExpenseItem component here under */}   {" "}
           {/* Add AllocationForm component here under */}
